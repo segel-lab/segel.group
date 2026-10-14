@@ -92,7 +92,14 @@ figcaption {
 }
 
 header {
+  display: flow-root;
   margin-bottom: var(--space-lg);
+}
+
+.dna {
+  float: right;
+  height: 4rem;
+  width: auto;
 }
 
 .brand:link,
@@ -192,6 +199,10 @@ footer {
 
   .cam-still {
     display: block;
+  }
+
+  .dna {
+    display: none;
   }
 }
 
