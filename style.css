@@ -155,7 +155,7 @@ figure {
   margin: 0 0 var(--space-md);
 }
 
-.cam video {
+.cam-loop {
   aspect-ratio: 16 / 9;
   display: block;
   width: 100%;
@@ -194,6 +194,11 @@ section figure img {
   width: 100%;
 }
 
+.badge {
+  display: inline-block;
+  margin-top: var(--space-xs);
+}
+
 footer {
   clear: both;
   color: var(--muted);
@@ -202,7 +207,7 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cam video {
+  .cam-loop {
     display: none;
   }
 
