@@ -92,14 +92,14 @@ figcaption {
 }
 
 header {
-  display: flow-root;
+  align-items: center;
+  display: flex;
+  gap: var(--space-md);
   margin-bottom: var(--space-lg);
 }
 
-.dna {
-  float: right;
-  height: 4rem;
-  width: auto;
+.title {
+  margin-right: auto;
 }
 
 .brand:link,
@@ -107,6 +107,15 @@ header {
   color: var(--fg);
   font-size: var(--size-h1);
   text-decoration: none;
+}
+
+.dna,
+.logo img {
+  display: block;
+  height: calc(
+    var(--size-h1) * var(--leading-body) + var(--size-h2) * var(--leading-snug)
+  );
+  width: auto;
 }
 
 nav {
